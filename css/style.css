@@ -150,16 +150,21 @@ hr{
     width: 70%;
     display: flex;
     margin-left: 250px;
-    padding: 20px;
     justify-content: space-between;
 }
-.text-logo, .sign-in{
-    margin-top: 5px;
+.sign-in{
+    margin-top: 30px;
 }
-.text-logo{
-    font-family: ethnocentric;
-    color: #adff2f;
-    letter-spacing: 5px;
+.text-logo img{
+    width: 150px;
+    margin-left: 20px;
+}
+.text-logo p{
+    color: #fff;
+    font-weight: 500;
+    font-size: .8em;
+    margin: -30px 0 40px 20px;
+    text-align: center;
 }
 .sign-in p{
     margin-left: 0px;
@@ -182,7 +187,7 @@ hr{
     min-height: 750px;
     width: 700px;
     box-shadow: 0px 0px 20px;
-    margin: 20px 0 0 270px;
+    margin: 0 0 0 270px;
     
 }
 .signup-h1{
@@ -300,6 +305,106 @@ hr{
     background: #078330;
 }
 
+/* Support Page Styling */
+.support{
+    background-image: url(../images/support-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.sup-logo{
+    width: 750px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.go-home{
+    margin-top: 90px;
+}
+.go-home p a{
+    color: #adff2f;
+    text-decoration: none;
+}
+.sup-logo img{
+    width: 150px;
+    margin-left: 5px;
+}
+.dev-logo p{
+    color: #fff;
+}
+.sup-logo p{
+    margin-top: -30px;
+    padding-bottom: 20px;
+    font-size: .9em;
+}
+.billing-form{
+    width: 750px;
+    min-height: 750px;
+    background: transparent;
+    margin: 15px auto;
+    color: #fff;
+}
+.bill-h1 h1{
+    padding: 60px 0 30px 60px;
+    letter-spacing: 2px;
+}
+.sup-form{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.form-box{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #d9e7bc;
+}
+.state-zip{
+    display: flex;
+}
+#state, #zip-code{
+    padding: 10px;
+    width: 140px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #d9e7bc;
+}
+.lable{
+    margin-left: 10px;
+}
+
+.var-cards img{
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+}
+
+.pay-btn{
+    width: 200px;
+    margin: 20px auto 0;
+}
+.pay{
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #adff2f;
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: #adff2f;
+    background: transparent;
+}
+.pay:hover{
+    background: #fff;
+    color: #619b09;
+    border: 2px solid #619b09;
+}
+
+
+/* Footer Styling */
 footer{
     height: 20vh;
     background-color: #fff;
