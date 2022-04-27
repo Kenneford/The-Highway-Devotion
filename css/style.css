@@ -5,10 +5,115 @@
 }
 body{
     width: 100%;
+    height: 100vh;
     font-family: Poppins, Roboto;
     background-color: #494848;
 }
 
+/* Index Page Styling */
+.index-firstlook{
+    position: relative;
+}
+
+.vid-bg{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.vid-bg video{
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.vidbg-cont{
+    background: transparent;
+    padding: 25px;
+    font-size: 3.5em;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-family: 'aladin';
+    font-weight: 900;
+    margin-top: 350px;
+    color: #292929;
+    text-shadow: #adff2f 1px 0px;
+}
+
+/* Index Logo Styling */
+.index-logo{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.dex-logo img{
+    width: 9.4em;
+    padding-left: 2em;
+}
+.dex-logo p{
+    color: #fff;
+    font-weight: 500;
+    font-size: .8em;
+    margin: -30px 0 40px;
+    text-align: center;
+    padding-left: 2em;
+}
+nav{
+    display: flex;
+    padding-right: 3em;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 1em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #adff2f;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 400;
+    transition: .3s;
+}
+.index-logo nav ul li a:hover{
+    color: #292929;
+    font-weight: 700;
+}
+.donate-wrap{
+    padding: .8em;
+}
+.donate-btn{
+    width: 100px;
+    padding: 3px;
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid #adff2f;
+    background: transparent;
+}
+.donate-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.donate-wrap:hover{
+    background: #078330;
+    cursor: pointer;
+}
+
+
+/* LogIn Page Styling */
 /* Container Styling */
 .container{
     background: url(../images/Login-bg.png);
@@ -16,13 +121,22 @@ body{
     background-size: cover;
     width: 100%;
     height: 80vh;
+}
+.content-wrap{
+    max-width: 68em;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 400px;
+    margin: auto;
+    align-items: center;
+}
+.brand, .login-form{
+    padding-top: 11.5em;
 }
 
 /* Brand Styling */
+.brand{
+    width: 55%;
+}
 .brand h1{
     width: 600px;
     font-family: ethnocentric;
@@ -138,7 +252,7 @@ hr{
     color: greenyellow;
 }
 
-/* Sign Up Styling */
+/* Sign-Up Page Styling */
 .bg-img{
     background: url(../images/SignUp-bg\ overlayed.png);
     background-position: center;
@@ -146,17 +260,19 @@ hr{
     width: 100%;
     height: 100vh;
 }
+.logo-wrap{
+    max-width: 100%;
+    margin: auto;
+}
 .signup-logo{
-    width: 70%;
     display: flex;
-    margin-left: 250px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .sign-in{
     margin-top: 30px;
 }
 .text-logo img{
-    width: 150px;
+    width: 9.4em;
     margin-left: 20px;
 }
 .text-logo p{
@@ -184,11 +300,10 @@ hr{
 }
 .signup-form{
     background: #9ba0a7;
-    min-height: 750px;
-    width: 700px;
+    min-height: 46em;
+    width: 44em;
     box-shadow: 0px 0px 20px;
-    margin: 0 0 0 270px;
-    
+    margin: auto;
 }
 .signup-h1{
     padding: 30px 10px 0;
@@ -305,7 +420,7 @@ hr{
     background: #078330;
 }
 
-/* Support Page Styling */
+/* Donation Page Styling */
 .support{
     background-image: url(../images/support-bg.png);
     background-position: center;
@@ -403,6 +518,7 @@ hr{
     background: #fff;
     color: #619b09;
     border: 2px solid #619b09;
+    cursor: pointer;
 }
 
 
@@ -427,3 +543,6 @@ footer p{
 .ft-bottom span{
     color: #619b09;
 }
+
+
+
