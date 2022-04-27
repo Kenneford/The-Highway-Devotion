@@ -362,6 +362,7 @@ hr{
     border-radius: 5px;
     border: none;
     background: #d9e7bc;
+    font-size: 1.3em;
 }
 .state-zip{
     display: flex;
@@ -369,6 +370,7 @@ hr{
 #state, #zip-code{
     padding: 10px;
     width: 140px;
+    font-size: 1.3em;
     margin: 10px;
     border-radius: 5px;
     border: none;
@@ -380,7 +382,7 @@ hr{
 
 .var-cards img{
     width: 300px;
-    height: 40px;
+    height: 45px;
     margin: 10px;
 }
 
